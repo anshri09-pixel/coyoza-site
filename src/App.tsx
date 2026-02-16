@@ -8,7 +8,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/coyoza-site/">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
