@@ -11,11 +11,35 @@ export default function Contact() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (e: FormEvent) => {
+  e.preventDefault();
+
+  const formObject = {
+    access_key: "83fca574-a264-469c-b9a5-7e3abf8e1a55",
+    name: formData.name,
+    email: formData.email,
+    phone: formData.phone,
+    company: formData.company,
+    message: formData.message,
+  };
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(formObject),
+  });
+
+  const result = await response.json();
+
+  if (result.success) {
     setIsSubmitted(true);
+
     setTimeout(() => {
       setIsSubmitted(false);
+
       setFormData({
         name: '',
         email: '',
@@ -24,8 +48,8 @@ export default function Contact() {
         message: '',
       });
     }, 3000);
-  };
-
+  }
+};
   return (
     <div className="bg-white">
       <section className="bg-gradient-to-br from-cyan-600 to-teal-700 text-white py-16">
