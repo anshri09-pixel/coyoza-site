@@ -8,19 +8,30 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <img
-              src="https://raw.githubusercontent.com/anshri09-pixel/cma3-brochure/main/logo.png"
+              src="https://raw.githubusercontent.com/anshri09-pixel/cma3-brochure/refs/heads/main/CMA3_logo%20(1).png"
               alt="CMA3 Solutions Logo"
               className="h-16 w-auto mb-4 brightness-0 invert"
               onError={(e) => {
                 e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"%3E%3Crect fill="white" width="64" height="64" rx="8"/%3E%3Ctext x="32" y="44" font-family="Arial" font-size="28" font-weight="bold" fill="%23111827" text-anchor="middle"%3ECMA3%3C/text%3E%3C/svg%3E';
               }}
             />
-            <h3 className="text-white text-lg font-semibold mb-2">
-              Coyoza Maiden A3 Solution Private Limited
-            </h3>
-            <p className="text-sm leading-relaxed">
-              Delivering reliable, process-driven, and scalable business support services with a focus on quality, accuracy, and compliance.
-            </p>
+            <div className="text-sm leading-6 text-gray-300 mt-3">
+  <p className="text-white text-lg font-bold tracking-wide">
+    Coyoza Maiden A3 Solutions Pvt Ltd
+  </p>
+  <p>
+    6/429, DS City, Manuvakatupalayam
+  </p>
+  <p>
+    Mallasamudram, Tiruchengode
+  </p>
+  <p>
+    Namakkal – 637503
+  </p>
+  <p>
+    Tamil Nadu, India
+  </p>
+</div>
           </div>
 
           <div>
@@ -42,12 +53,6 @@ export default function Footer() {
               </a>
             </div>
             <div className="mt-4 space-y-2">
-              <p className="text-sm">
-                <span className="font-semibold text-white">CIN:</span> U63111TZ2025PTC037097
-              </p>
-              <p className="text-sm">
-                <span className="font-semibold text-white">GST No:</span> 33AANCC3585G1ZI
-              </p>
               <a
                 href="https://www.linkedin.com/company/coyoza-maiden-a3-solutions-private-limited/?viewAsMember=true"
                 target="_blank"
@@ -66,14 +71,14 @@ export default function Footer() {
               <div className="flex items-start space-x-2">
                 <Award size={20} className="text-cyan-400 flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-semibold text-white">ISO 9001:2015</p>
+                  <p className="font-medium text-white">ISO 9001:2015</p>
                   <p className="text-sm">Quality Management System</p>
                 </div>
               </div>
               <div className="flex items-start space-x-2">
                 <Award size={20} className="text-cyan-400 flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-semibold text-white">ISO 27001:2017</p>
+                  <p className="font-medium text-white">ISO 27001:2017</p>
                   <p className="text-sm">Information Security Management</p>
                 </div>
               </div>
@@ -81,7 +86,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+        <div className="border-t border-gray-700 mt-10 pt-6 text-center">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
             <p className="text-sm">
               © {new Date().getFullYear()} Coyoza Maiden A3 Solution Private Limited. All rights reserved.

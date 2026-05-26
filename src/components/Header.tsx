@@ -13,25 +13,31 @@ export default function Header() {
     { path: '/about', label: 'About' },
     { path: '/services', label: 'Services' },
     { path: '/contact', label: 'Contact' },
+    { path: '/careers', label: 'Careers' },
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center space-x-3">
-            <img
-              src="https://raw.githubusercontent.com/anshri09-pixel/cma3-brochure/main/logo.png"
-              alt="CMA3 Solutions Logo"
-              className="h-16 w-auto max-w-xs"
-              onError={(e) => {
-                e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"%3E%3Crect fill="%230891b2" width="64" height="64" rx="8"/%3E%3Ctext x="32" y="44" font-family="Arial" font-size="28" font-weight="bold" fill="white" text-anchor="middle"%3ECMA3%3C/text%3E%3C/svg%3E';
-              }}
-            />
-            <span className="text-lg font-bold text-gray-900 hidden sm:block max-w-xs">
-              Coyoza Maiden A3 Solution
-            </span>
-          </Link>
+        <div className="flex justify-between items-center py-4">
+          <Link to="/" className="flex items-center gap-3 min-w-0">
+
+  <img
+    src="https://raw.githubusercontent.com/anshri09-pixel/cma3-brochure/refs/heads/main/CMA3_logo%20(1).png"
+    alt="Coyoza Maiden A3 Solution Logo"
+    className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain"
+  />
+
+  <div className="flex flex-col leading-tight">
+  <span className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 tracking-tight">
+    Coyoza Maiden A3 Solution Private Limited
+  </span>
+  <span className="text-xs sm:text-sm text-gray-500 font-medium tracking-wide">
+    Accuracy • Assurance • Accountability
+  </span>
+</div>
+
+</Link>
 
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (

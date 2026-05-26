@@ -210,36 +210,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              Company Information
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div>
-                <p className="text-sm text-gray-600 mb-1">Registered Name</p>
-                <p className="text-lg font-semibold text-gray-900">
-                  Coyoza Maiden A3 Solution Private Limited
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-gray-600 mb-1">CIN Number</p>
-                <p className="text-lg font-semibold text-gray-900">
-                  U63111TZ2025PTC037097
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-gray-600 mb-1">GST Number</p>
-                <p className="text-lg font-semibold text-gray-900">
-                  33AANCC3585G1ZI
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

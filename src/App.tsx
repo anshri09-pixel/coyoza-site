@@ -5,10 +5,14 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import ScrollToTop from './components/ScrollToTop';
+import Careers from './pages/Careers';
+
 
 function App() {
   return (
-    <Router basename="/coyoza-site/">
+    <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -16,6 +20,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+	  <Route path="/careers" element={<Careers />} />
         </Routes>
       </Layout>
     </Router>
